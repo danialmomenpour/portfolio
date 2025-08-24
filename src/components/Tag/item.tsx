@@ -15,7 +15,12 @@ export const TagItem = ({
 
     return (
         <div
-            className={cn("py-2.5 px-4 w-fit rounded-lg drop-shadow bg-greyscale-0  border border-transparent cursor-pointer", className)} {...props}>
+            className={cn(
+                "py-1 px-5 w-fit rounded-xl bg-light-200 text-light-600 dark:bg-dark-200 dark:text-dark-600",
+                className,
+            )}
+            {...props}
+        >
             {children ? children :
                 <div className={cn("flex flex-row items-center justify-center gap-2")}>
                     {icon ? (
@@ -28,7 +33,7 @@ export const TagItem = ({
                         </div>
                     ) : null}
                     {title ? (
-                        <p className={cn("text-sm font-medium leading-5 text-greyscale-900")}>
+                        <p className={cn("text-sm font-medium leading-5")}>
                             {title}
                         </p>
                     ) : null}

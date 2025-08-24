@@ -1,7 +1,10 @@
+"use client"
+
 import React, {useState} from 'react';
 import {cn} from "@/lib/utils";
-import Tag from "@/components/general/Tag/index";
-import {TagListProps} from "@/components/general/Tag/type";
+import {TagListProps} from "@/components/Tag/type";
+import Tag from "@/components/Tag/index";
+
 
 export const TagList = ({
                             items,
