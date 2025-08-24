@@ -1,3 +1,5 @@
+"use client";
+
 import {ReactSVG} from 'react-svg';
 import clsx from "clsx";
 import {IconProps} from "@/components/Icon/type";
