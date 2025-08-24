@@ -5,7 +5,7 @@ import {ButtonProps} from "@/components/Button/type";
 const Button = ({
                     className,
                     type = 'primary',
-                    size = 'primary',
+                    size = 'base',
                     children,
                     onClick,
                     ...props
@@ -19,8 +19,9 @@ const Button = ({
     }
 
     const sizeStyle = {
-        primary: 'h-9 px-4 rounded-xl',
-        secondary: 'w-11 h-11 p-1.5 rounded-lg',
+        base: 'w-full h-9',
+        md: 'w-9 h-9 p-1.5',
+        lg: 'w-11 h-11 p-1.5 rounded-lg',
     }
 
 
@@ -28,7 +29,7 @@ const Button = ({
         <button
             onClick={onClick}
             className={cn(
-                "w-fit cursor-pointer",
+                "rounded-xl flex items-center justify-center cursor-pointer",
                 typeStyle[type],
                 sizeStyle[size],
                 className,
