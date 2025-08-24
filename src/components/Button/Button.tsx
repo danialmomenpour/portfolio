@@ -13,6 +13,8 @@ const Button = ({
 ) => {
 
     const typeStyle = {
+        base: 'bg-transparent',
+
         primary: 'bg-light-900 dark:bg-dark-900 text-light-50 dark:text-dark-50 hover:bg-light-700 dark:hover:bg-dark-700 active:bg-light-800 dark:active:bg-dark-800 font-medium text-md leading-24',
 
         secondary: 'bg-transparent text-light-600 dark:text-dark-600 hover:bg-light-100 dark:hover:bg-dark-100 hover:text-light-700 dark:hover:text-dark-600 active:bg-light-200 active:text-light-600 dark:active:bg-dark-200 dark:active:text-dark-600'

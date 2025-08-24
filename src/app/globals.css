@@ -65,6 +65,13 @@ body {
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
+  /* Breakpoints */
+
+  --breakpoint-mobile: 47.99rem;      /* 768px */
+  --breakpoint-tablet-min: 48rem;     /* 1024px */
+  --breakpoint-tablet-max: 63.99rem;     /* 1024px */
+  --breakpoint-desktop: 64rem;    /* 768px */
+
 }
 
 /* custom shadows */
